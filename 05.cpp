@@ -39,11 +39,14 @@ int main()
                     break;
                 }
             }
-            if(dot_position != -1 && dot_count != 0 && isValid) {
+            if(dot_position != -1 && dot_count == 1 && isValid) {
                 int fraction = word.substr(dot_position+1).size();
                 if(fraction == 2) cout<<word<<" : "<<"Float Number\n";
                 else if(fraction > 3) cout<<word<<" : "<<"Double Number\n";
                 else isValid = false;
+            }
+            else {
+                isValid = false;
             }
         }
         else {
