@@ -33,6 +33,10 @@ int main()
                 if(word[i] == '.') {
                     dot_position = i;
                     dot_count++;
+                    if (dot_count > 1) {
+                        isvalid = false;
+                        break;
+                    }
                 }
                 if(!isdigit(word[i]) && (word[i] != '.')) {
                     isValid = false;
