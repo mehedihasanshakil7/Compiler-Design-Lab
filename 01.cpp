@@ -8,7 +8,7 @@ b) Separates letters, digits and others characters.
 using namespace std;
 
 int main() {
-    freopen("1.input.txt", "r", stdin);
+    freopen("01.input.txt", "r", stdin);
     string input;
     getline(cin, input);
 

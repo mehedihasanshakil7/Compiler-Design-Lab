@@ -14,7 +14,7 @@ bool is_vowel(char c) {
 }
 
 int main() {
-    freopen("2.input.txt", "r", stdin);
+    freopen("02.input.txt", "r", stdin);
     string input;
     getline(cin, input);
 

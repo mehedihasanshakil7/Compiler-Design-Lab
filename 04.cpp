@@ -9,7 +9,7 @@ Invalid Input or Undefined = Otherwise
 using namespace std;
 int main()
 {
-    freopen("4.input.txt", "r", stdin);
+    freopen("04.input.txt", "r", stdin);
     string word;
 
     while (getline(cin, word))

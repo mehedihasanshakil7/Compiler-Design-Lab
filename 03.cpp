@@ -6,7 +6,7 @@ CSE-3141 as Computer Science & Engineering, 3rd year, 1st semester, Compiler Des
 using namespace std;
 
 int main() {
-    freopen("3.input.txt", "r", stdin);
+    freopen("03.input.txt", "r", stdin);
     string input, dept_name;
     getline(cin, input);
 

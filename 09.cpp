@@ -18,7 +18,7 @@ vector<string> noun = {"book", "cow", "dog", "home", "grass", "rice", "mango"};
 
 int main()
 {
-    freopen("9.input.txt", "r", stdin);
+    freopen("09.input.txt", "r", stdin);
     string input;
     while (getline(cin, input))
     {
