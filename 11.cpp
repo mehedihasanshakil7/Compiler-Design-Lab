@@ -57,10 +57,8 @@ int precedence(char c) {
     switch (c)
     {
     case '^':
-        return 3;
     case '/':
     case '*':
-        return 2;
     case '+':
     case '-':
         return 1;
