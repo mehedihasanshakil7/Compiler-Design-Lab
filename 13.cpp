@@ -71,7 +71,7 @@ int main() {
                                     if(f != '@') follow[target].insert(f);
                                 }
                                 if(first[str[j]].find('@') == first[str[j]].end()) {
-                                    stop = true; // if the non-terminal doesn't contain epsilo(@), then stop
+                                    stop = true; // if the non-terminal doesn't contain epsilon(@), then stop
                                     break;
                                 }
                             }

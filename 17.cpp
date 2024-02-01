@@ -27,12 +27,6 @@ string solve(string infix) {
             if(temp == "then") {temp = ""; continue;}
             if(temp == "if") stk.push(temp);
             else if(temp == "else") {
-                while (stk.top() == "else")
-                {
-                    postfix += "?";
-                    stk.pop();
-                    stk.pop();
-                }
                 stk.push(temp);
 
             }
@@ -40,7 +34,7 @@ string solve(string infix) {
                 // convert infix expression into postfix and add to the postfix string
                 postfix += infixtoPostfix(temp);
                 // pop if-else pair from stack and add "?" to the postfix string
-                if(!stk.empty() && stk.top() == "else") {
+                while(!stk.empty() && stk.top() == "else") {
                     postfix += "?";
                     stk.pop();
                     stk.pop();
@@ -48,14 +42,6 @@ string solve(string infix) {
             }
             temp = "";
         }
-    }
-    
-    // add the remainning "?" mark if available
-    while (!stk.empty())
-    {
-        postfix += "?";
-        stk.pop();
-        stk.pop();
     }
     return postfix;    
 }
